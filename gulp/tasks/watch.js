@@ -6,6 +6,7 @@ browserSync = require('browser-sync').create();
 gulp.task('watch', function(){
     browserSync.init({
         notify: false,
+        host: "192.168.1.70",
         server: {
             baseDir: "app"
         }
